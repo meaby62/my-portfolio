@@ -1,0 +1,241 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: hsl(257, 60%, 6%);
+    color: white;
+    line-height: 1.8;
+}
+
+header {
+    padding: 20px 8%;
+    background-color: rgba(27,20,48,0.7);
+    backdrop-filter: blur(10px);
+    position: static;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav ul li {
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+nav h2 {
+    color: #c084fc;
+    font-size: 28px;
+    margin: 0;
+    text-shadow: 0 0 15px #c084fc;
+}
+
+nav ul li:hover {
+    color: #c084fc;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    color: white;
+    text-shadow: 0 0 20px #8b5cf6;
+}
+
+.hero h2 {
+    font-size: 26px;
+    color: #c084fc;
+    margin-top: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #d1c5e8;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.hero a {
+    display: inline-block;
+    background-color: #8b5cf6;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 30px;
+    margin-top: 20px;
+}
+
+.hero a:hover {
+    background-color: #c084fc;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #8b5cf6;
+}
+
+.about {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.about h2 {
+    color: #c084fc;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 18px;
+    color: #d1c5e8;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 2;
+}
+
+.skills {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.skills h2 {
+    color: #c084fc;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.skills ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+.skills ul li {
+    background-color: #292044;
+    color: white;
+    padding: 15px 25px;
+    border: 1px solid #8b5cf6;
+    border-radius: 15px;
+}
+
+.projects {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.projects h2 {
+    color: #c084fc;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.projects-card {
+    background-color: #1b1430;
+    padding: 25px;
+    border: 1px solid #8b5cf6;
+    border-radius: 15px;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.projects-card h3 {
+    color: #c084fc;
+    font-size: 22px;
+}
+
+.projects-card p {
+    color: #d1c5e8;
+    font-size: 16px;
+}
+
+.contact {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.contact h2 {
+    color: #c084fc;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    color: #d1c5e8;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.contact a {
+    display: inline-block;
+    background-color: #8b5cf6;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 30px;
+}
+
+footer {
+    background-color: #1b1430;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #8b5cf6;
+}
+
+footer p {
+    color: #d1c5e8;
+    font-size: 14px;
+    margin: 0;
+}
+
+@media (max-width:768px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        padding: 0;
+    }
+    .hero h1 {
+        font-size: 28px;
+    }
+    .hero h2 {
+        font-size: 20px;
+    }
+    .projects-card {
+        padding: 25px;
+        backdrop-filter: blur(10px);
+        background-color: rgba(139, 92, 246, 0.2);
+        transition: all 0.3s ease;
+        border: 1px solid #8b5cf6;
+        border-radius: 15px;
+        margin: 20px auto;
+        max-width: 600px;
+        box-shadow: 0 0 15px rgba(139, 92, 246, 0.2);
+    }
+    .project-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 0 20px #8b5cf6;
+        border-color: #c084fc;
+    }
+}
